@@ -1,7 +1,7 @@
 name: V3 tests
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
 
 workflows:
   - saikumar-vs/pmm-qa/github/workflows/fb-e2e-suite:yml@sai-gh
