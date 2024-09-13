@@ -1,10 +1,7 @@
 name: V3 tests
-
 on:
   schedule:
     - cron: '*/15 * * * *'
-jobs:
-  trigger_sai-gh:
-    name: Trigger Sai PMM-QA
-    uses: saikumar-vs/pmm-qa/.github/workflows/fb-e2e-suite.yml@sai-gh
-    secrets: inherit
+
+workflows:
+  - saikumar-vs/pmm-qa/github/workflows/fb-e2e-suite:yml@sai-gh
