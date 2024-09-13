@@ -1,7 +1,9 @@
 name: V3 tests
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
 
-workflows:
-  - saikumar-vs/pmm-qa/github/workflows/fb-e2e-suite:yml@sai-gh
+jobs:
+  trigger_sai-gh:
+    name: Run fb-e2e-suite Reusable Workflow
+    uses: saikumar-vs/pmm-qa/.github/workflows/fb-e2e-suite.yml@sai-gh
