@@ -7,3 +7,4 @@ jobs:
   trigger_sai-gh:
     name: Run fb-e2e-suite Reusable Workflow
     uses: saikumar-vs/pmm-qa/.github/workflows/fb-e2e-suite.yml@sai-gh
+    secrets: inherit
