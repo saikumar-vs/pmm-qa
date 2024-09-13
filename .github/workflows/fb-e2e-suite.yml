@@ -67,7 +67,7 @@ on:
 jobs:
   trigger_sai-gh:
     name: Trigger Sai PMM-QA
-    uses: ./.github/workflows/fb-e2e-suite.yml@sai-gh
+    uses: saikumar-vs/pmm-qa/.github/workflows/fb-e2e-suite.yml@sai-gh
     secrets: inherit
 
   backup_management_mongo:
