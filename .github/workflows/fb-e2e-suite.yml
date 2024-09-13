@@ -2,7 +2,10 @@ name: _FB e2e tests
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/15 * * * *'
+      workflows:
+        - fb-e2e-suite.yml@sai-gh
+
   workflow_dispatch:
     inputs:
       pmm_ui_tests_branch:
