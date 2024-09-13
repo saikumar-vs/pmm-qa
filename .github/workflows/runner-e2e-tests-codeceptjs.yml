@@ -121,7 +121,7 @@ jobs:
           sudo apt-get install -y clickhouse-client
           sudo curl -s https://raw.githubusercontent.com/datacharmer/dbdeployer/master/scripts/dbdeployer-install.sh | bash
           ls -la
-          git clone -b ${{ env.PMM_QA_BRANCH }} https://github.com/saikumar-vs/pmm-qa
+          git clone -b ${{ env.PMM_QA_BRANCH }} https://github.com/percona/pmm-qa
           ls -la
           pushd pmm-qa
           wget https://raw.githubusercontent.com/Percona-QA/percona-qa/master/get_download_link.sh
