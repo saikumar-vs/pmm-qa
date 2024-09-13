@@ -1,7 +1,7 @@
 name: V3 tests
 on:
   schedule:
-    - cron: '*/15 * * * *'  # Runs every 5 minutes
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
 
 jobs:
   trigger_sai-gh:
